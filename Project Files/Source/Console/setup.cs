@@ -19987,10 +19987,15 @@ namespace Thetis
                     break;
 
                 case HPSDRModel.ANAN100D:
-                    chkAlexPresent.Checked = true;
+                    // WB2AA
+                    //chkAlexPresent.Checked = true;
+                    //chkAlexPresent.Enabled = true;
+                    //chkApolloPresent.Enabled = false;
+                    //chkApolloPresent.Checked = false;
+                    chkAlexPresent.Checked = false;
                     chkAlexPresent.Enabled = true;
-                    chkApolloPresent.Enabled = false;
-                    chkApolloPresent.Checked = false;
+                    chkApolloPresent.Enabled = true;
+                    chkApolloPresent.Checked = true;
                     pnlGeneralHardwareORION.Enabled = false;
 
                     chkGeneralRXOnly.Visible = true;
